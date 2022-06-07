@@ -1,0 +1,61 @@
+* {box-sizing: border-box;}
+.error {
+    color: red;
+}
+.lgn {
+    text-align: center;
+    border-style:double;
+    border-color: rgb(214, 204, 204);
+    border-radius: 25px;
+    border-width: 20px;
+    margin: auto;
+    width: 40%;
+    background-color: #04AA6D;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    box-sizing: border-box;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+.lgn:hover {
+    transform: scale(1.2); 
+}
+.form {
+    float:none;
+}
+#ln {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.lnsep {
+    height: 30px;
+    color: rgb(214, 204, 204);
+    background-color: rgb(214, 204, 204);
+    border-style: hidden;
+}
+#navsep {
+    height: 50px;
+    border-style: hidden;
+}
+.lgn .form .lnbutton{
+    cursor: pointer;
+    background-color: white;
+    padding: 7px;
+    border-style: hidden;
+    border-radius: 15px;
+    display: inline-block;
+}
+.lgn .form .lnbutton:hover{
+    background-color: rgb(214, 204, 204);
+}
+.lgn .info{
+    font-size: 20px;
+}
+.lgn .form .fp {
+    color: red;
+    font-size: 13px;
+}

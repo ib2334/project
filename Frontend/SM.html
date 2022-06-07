@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../Frontend/SideMenu.css">
+<html>
+    <div id="SideM-placeholder"></div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("../Frontend/SideMenu.html", function(data){
+        $("#SideM-placeholder").replaceWith(data);
+    });
+    </script>
+</html>

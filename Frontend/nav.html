@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../Frontend/nav.css">
+<html>
+    <head>
+        <nav>
+            <div class="topnav">
+                <META HTTP-EQUIV="REFRESH" CONTENT="URL=http://localhost/CS244/">
+                <a class="active" href="http://localhost/CS244/">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="http://localhost/CS244/Frontend/about.html">About</a>
+                <a href="http://localhost/CS244/Frontend/login.php" id="lgin">Login</a>
+                <div class="search-container">
+                    <form action="http://localhost/CS244/Frontend/login.php">
+                        <input type="text" placeholder="Search.." name="search" class="sbox"></input>
+                        <button type="submit"><img src="https://img.icons8.com/ios/344/search.png" class="icon"></button> 
+                    </form>
+                </div>
+            </div>
+            <script>
+                //JS function to load this page when called in another file
+                $(function(){
+                  $("#nav-placeholder").load("nav.html");
+                });
+            </script>
+        </nav>
+    </head>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="Frontend/nav.css">
+<link rel="stylesheet" type="text/css" href="Frontend/SideMenu.css">
+<html>
+    <div id="nav-placeholder"></div>
+    <div id="SideM-placeholder"></div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("Frontend/nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    $.get("Frontend/SideMenu.html", function(data){
+        $("#SideM-placeholder").replaceWith(data);
+    });
+    </script>
+    <body>
+        <div class="login">
+        <h1>Login</h1>
+        Login as:
+        <form method="POST" action="Frontend/login.php">
+        <input class="button" type="submit" name="submit" value="Admin"> <br>
+        Login as:
+        <form method="POST" action="Frontend/login.php"> <br>
+        <input class="button" type="submit" name="submit" value="Student"> <br>
+        Login as:
+        <form method="POST" action="Frontend/login.php"> <br>
+        <input class="button" type="submit" name="submit" value="Teacher"> <br>
+        Login as:
+        <form method="POST" action="Frontend/login.php"> <br>
+        <input class="button" type="submit" name="submit" value="Principal"> <br>
+        </div>
+    </body>
+</html>
